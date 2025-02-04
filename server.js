@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
     res.json({message: "Hello World"});
 })
 
+app.get('/info', (req, res) => {
+    res.json({message: "This is a test API"});
+})
+
 app.listen(5000, () => {
     console.log('Server Listening on PORT 5000');
     mongoose.connect('mongodb://localhost:27017/temp');
